@@ -213,8 +213,8 @@ export default function NoteCard({ note }: Props) {
 
 ## Development Steps
 
-1. **Start here**: Get basic note creation working
-2. **Next**: Add delete/edit functionality  
+1. **Start here**: Get basic note creation working (done)
+2. **Next**: Add delete/edit functionality  (done)
 3. **Then**: Add OpenAI embeddings for search
 4. **Later**: Add graph visualization
 5. **Finally**: Add database (PostgreSQL)
