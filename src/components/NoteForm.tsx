@@ -93,7 +93,7 @@ export default function NoteForm({ editingNote, onNoteUpdated, onCancelEdit }: P
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-sm border">
-      <h3 className="text-lg font-semibold mb-4">
+      <h3 className="text-lg font-semibold mb-4 text-gray-700">
         {editingNote ? 'Edit Note' : 'Add New Note'}
       </h3>
       
@@ -108,7 +108,7 @@ export default function NoteForm({ editingNote, onNoteUpdated, onCancelEdit }: P
             placeholder="Enter note title..."
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white text-gray-900 placeholder-gray-500"
             required
             disabled={isSubmitting}
           />
@@ -123,7 +123,7 @@ export default function NoteForm({ editingNote, onNoteUpdated, onCancelEdit }: P
             placeholder="Write your note content..."
             value={content}
             onChange={(e) => setContent(e.target.value)}
-            className="w-full p-3 border border-gray-300 rounded-md h-32 resize-vertical focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            className="w-full p-3 border border-gray-300 rounded-md h-32 resize-vertical focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white text-gray-900 placeholder-gray-500"
             required
             disabled={isSubmitting}
           />
@@ -139,7 +139,7 @@ export default function NoteForm({ editingNote, onNoteUpdated, onCancelEdit }: P
             placeholder="work, personal, ideas..."
             value={tags}
             onChange={(e) => setTags(e.target.value)}
-            className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white text-gray-900 placeholder-gray-500"
             disabled={isSubmitting}
           />
         </div>
